@@ -6,11 +6,8 @@ class Game
 public:
 	void showBoard(char[]);
 	void initialize(char[]);
-	bool inGame()
-	{
-		bool status = true;
-		return status;
-	}
+	bool inGame(char[]);
+	//bool playerWin(char[], Player, Player);
 };
 
 #endif // !GAME_H
