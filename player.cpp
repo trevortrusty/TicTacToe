@@ -2,7 +2,12 @@
 
 Player::Player()
 {
-	setMark('x');
+	setMark('0');
+}
+
+Player::Player(char m)
+{
+	setMark(m);
 }
 
 void Player::addMove(char game[], int position, Game var)
