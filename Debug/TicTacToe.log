@@ -1,2 +1,4 @@
-﻿  client.cpp
+﻿  game.cpp
+  player.cpp
+  Generating Code...
   TicTacToe.vcxproj -> D:\source\repos\TicTacToe\Debug\TicTacToe.exe
