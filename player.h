@@ -6,8 +6,11 @@
 class Player
 {
 public:
-	char type; // Letter that represents the players' move i.e. x or y
 	void addMove(char[], int, Game); // adds a player's mark to the desired spot
+	Player(); // Default constructor
+	void setMark(char);
+private:
+	char mark; // Letter that represents the players' move i.e. x or y
 };
 
 #endif // !PLAYER_H
