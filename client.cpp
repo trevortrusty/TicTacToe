@@ -74,4 +74,5 @@ int main()
 		std::cout << "Cats Game" << std::endl;
 	}
 	system("pause");
+	return 0;
 }
