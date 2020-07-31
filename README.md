@@ -10,3 +10,5 @@ Grid for the game uses numbers (i.e. integers 1 - 9):
 7--8--9
 
 When console asks for your input, enter what spot to put your 'x' or 'o' in (1-9), according to this layout.
+=======
+When console asks for your input, enter what spot to put your 'x' or 'o' in (1-9), according to this layout.
