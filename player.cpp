@@ -38,12 +38,6 @@ bool Player::playerWin(char m[])
 	bool vertical = (m[1] == m[4] && m[4] == m[7] && m[7] == mark) || (m[2] == m[5] && m[5] == m[8] && m[8] == mark) || (m[3] == m[6] && m[6] == m[9] && m[9] == mark);
 	bool diagonal = (m[1] == m[5] && m[5] == m[9] && m[9] == mark) || (m[3] == m[5] && m[5] == m[5] && m[7] == mark);
 
-	//bool win = horTop || horMiddle || horBottom || vertLeft || vertMiddle || vertRight || diagDown || diagUp;
-
-	//if (((m[1] == m[2]) && (m[2] == m[3]) && (m[3] == mark)) || (((m[4] == m[5]) && (m[5] == m[6]) && (m[6] == mark)))
-	//	|| (((m[7] == m[8]) && (m[8] == m[9]) && (m[9] == mark)) || (((m[1] == m[5]) && (m[5] == m[9]) && (m[9] == mark)))) // 7, 8 and 9....1, 5, and 9
-	//	|| (((m[2] == m[5]) && (m[5] == m[8]) && (m[8] == mark)) || (((m[3] == m[5]) && (m[5] == m[7]) && (m[7] == mark)))) // 2, 5, and 8..... 3, 5, and 7
-	//	|| (((m[1] == m[4]) && (m[4] == m[7]) && (m[7] == mark)) || (((m[3] == m[6]) && (m[6] == m[9]) && (m[9] == mark))))) // 1, 4, and 7.... 3, 6, and 9
 	if(horizontal || vertical || diagonal)
 	{
 		return true;

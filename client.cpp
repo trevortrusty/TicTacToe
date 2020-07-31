@@ -17,7 +17,7 @@ int main()
 	Player player1('x'), player2('o');
 
 	game.initialize(moves);
-
+	game.showBoard(moves);
 	//while (game.inGame(moves, player1, player2))
 	while (game.inGame(moves) && !player1.playerWin(moves) && !player2.playerWin(moves))
 	{
@@ -26,7 +26,7 @@ int main()
 		std::cin >> spot;
 
 		/*Catch input that will break the program (e.g. alpha characters) or numbers outside the range 1-9*/
-		while (std::cin.fail() || (spot < 1 || spot > 9)) 
+		while (std::cin.fail() || (spot < 1 || spot > 9) || game.taken(moves, spot)) 
 		{
 			std::cin.clear();
 			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -51,7 +51,7 @@ int main()
 			std::cin >> spot;
 
 			/*Catch input that will break the program (e.g. alpha characters) or numbers outside the range 1-9*/
-			while (std::cin.fail() || (spot < 1 || spot > 9))
+			while (std::cin.fail() || (spot < 1 || spot > 9) || game.taken(moves, spot))
 			{
 				std::cin.clear();
 				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');

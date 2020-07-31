@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 
+
 char intToChar(int num)
 {
 	switch (num)
@@ -49,19 +50,20 @@ void Game::initialize(char array[])
 
 void Game::showBoard(char game[])
 {
+
 	for (int i = 1; i <= 3; i++)
 	{
-		std::cout << "| " << game[i] << " | ";
+		std::cout << "| " << game[i] << " ";
 	}
 	std::cout << std::endl;
 	for (int i = 4; i <= 6; i++)
 	{
-		std::cout << "| " << game[i] << " | ";
+		std::cout << "| " << game[i] << " ";
 	}
 	std::cout << std::endl;
 	for (int i = 7; i <= 9; i++)
 	{
-		std::cout << "| " << game[i] << " | ";
+		std::cout << "| " << game[i] << " ";
 
 	}
 	std::cout << std::endl;
@@ -71,15 +73,16 @@ bool Game::inGame(char m[])
 {
 	for (int i = 1; i <= 9; i++)
 	{
-		//if (m[i] == '-')
-		//{
-		//	return true;
-		//}
-		if (m[i] >= 1 || m[i] <= 9)
+		if (m[i] >= '1' && m[i] <= '9')
 		{
 			return true;
 		}
 	}
 	return false;
 
+}
+
+bool Game::taken(char m[], int digit)
+{
+	return !isdigit(m[digit]);
 }

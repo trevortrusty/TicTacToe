@@ -7,6 +7,7 @@ public:
 	void showBoard(char[]);
 	void initialize(char[]);
 	bool inGame(char[]);
+	bool taken(char[], int);
 	//bool playerWin(char[], Player, Player);
 };
 
