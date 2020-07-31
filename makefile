@@ -1,4 +1,4 @@
-tictactoe.exe:	client.cpp game.cpp player.cpp
-		g++ client.cpp game.cpp player.cpp
+tictactoe:	client.cpp game.cpp player.cpp
+		g++ client.cpp game.cpp player.cpp -o tictactoe
 clean:
-		del tictactoe.exe
+		rm tictactoe
